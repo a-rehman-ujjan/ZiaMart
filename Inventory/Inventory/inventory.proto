@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message product {
+  int32 id = 1;
+  string name = 2;
+  int32 price = 3;
+  int32 quantity = 4;
+  string added_by = 5;
+}
