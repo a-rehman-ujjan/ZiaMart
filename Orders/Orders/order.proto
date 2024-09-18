@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message order {
+  int32 id = 1;
+  int32 user_id = 2;
+  string user_name = 3;
+  int32 product_id = 4;
+  string product_name = 5;
+  int32 quantity = 6;
+  float total_price = 7;
+}
+
+message product {
+  int32 id = 1;
+  string name = 2;
+  int32 price = 3;
+  int32 quantity = 4;
+  string added_by = 5;
+}

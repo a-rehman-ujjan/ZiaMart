@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "products"
+version = "0.1.0"
+description = ""
+authors = ["Mohsin <msnsh12@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiokafka = {extras = ["stubs"], version = "^0.10.0"}
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+fastapi = "^0.111.0"
+sqlmodel = "^0.0.19"
+protobuf= "^5.26.1"
+psycopg2 = "^2.9.9"
+psycopg = "^3.1.19"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = "^1.7.4"
+aiohttp = "^3.10.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+sqlmodel = "^0.0.18"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+aiokafka = "^0.10.0"
+protobuf = "^5.26.1"
