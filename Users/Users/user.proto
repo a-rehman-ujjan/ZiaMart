@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+enum Type {
+  CUSTOMER = 0;
+  ADMIN = 1;
+}
+
+enum Operation {
+  UNKWON = 0;
+  CREATE = 1;
+  UPDATE = 2;
+  UPDATEPASSWORD = 3;
+  DELETE = 4;
+}
+
+message user {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+  string password = 5;
+  Type usertype = 6;
+  Operation type = 7;
+}
